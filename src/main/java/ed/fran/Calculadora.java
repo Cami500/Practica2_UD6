@@ -81,15 +81,15 @@ public class Calculadora {
     }
 
 
-    public int oper1(int a, int n) {
+    public int duplicarValor(int valor, int iteraciones) {
 
-        int t = 1;
+        int resultado = 1;
 
-        for ( int i = 0; i < n; i++ ) {
-            t = t * a;
+        for ( int i = 0; i < iteraciones; i++ ) {
+            resultado = resultado * valor;
         }
 
-        return t;
+        return resultado;
     }
 
 

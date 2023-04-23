@@ -7,8 +7,13 @@ import org.junit.Test;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-{
+public class AppTest {
+    /**
+     * Constructor de la clase, obligatorio ponerlo ya que si no nos da warning
+     */
+    public AppTest(){
+        new AppTest();
+    }
     /**
      * Rigorous Test :-)
      */

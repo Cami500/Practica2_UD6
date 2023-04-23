@@ -13,6 +13,12 @@ package ed.fran;
 	 * @since 2.1 junio/2022
 	 */
 public class Calculadora {
+		/**
+		 * Constructor de la clase, obligatorio ponerlo, ya que si no se pone nos da warning
+		 */
+	public Calculadora(){
+		new Calculadora();
+	}
 
 	/**
 	 * Devolver la suma de dos números enteros pasados como parámetro

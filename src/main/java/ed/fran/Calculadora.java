@@ -81,6 +81,16 @@ public class Calculadora {
     }
 
 
+    /**
+     * Duplicar el valor un número de veces
+     *
+     * @param valor de tipo entero, valor a duplicar
+     * @param iteraciones de tipo entero, veces que queramos que se duplice
+     * @return Devuelve el valor duplicado
+     * @throws RuntimeException error al introducir un tipo de dato no esperado, es decir,
+     *                          un tipo de dato superior al int o diferente al int, tales como String, char etc...
+     *                          No son es obligada captura, por lo tanto son de tipo RunTimeException
+     */
     public int duplicarValor(int valor, int iteraciones) {
 
         int resultado = 1;
@@ -93,6 +103,15 @@ public class Calculadora {
     }
 
 
+    /**
+     * Saber si un número es divisible entre 0
+     *
+     * @param numero de tipo entero, número que queremos saber si es divisible
+     * @return Devuelve un booleano, true si es divisible o false si no lo es.
+     * @throws RuntimeException error al introducir un tipo de dato no esperado, es decir,
+     *                          un tipo de dato superior al int o diferente al int, tales como String, char etc...
+     *                          No son es obligada captura, por lo tanto son de tipo RunTimeException
+     */
     public boolean esDivisibleEntre2(int numero) {
 
         boolean esDivisible;
@@ -107,6 +126,15 @@ public class Calculadora {
     }
 
 
+    /**
+     * No se muy bien el funcionamiento de este método
+     *
+     * @param a de tipo entero
+     * @return Devuelve el String, aunque nunca se llega a devolver
+     * @throws RuntimeException error al introducir un tipo de dato no esperado, es decir,
+     *                          un tipo de dato superior al int o diferente al int, tales como String, char etc...
+     *                          No son es obligada captura, por lo tanto son de tipo RunTimeException
+     */
     public String oper3(int a) {
 
         String r = "";

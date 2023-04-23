@@ -93,17 +93,17 @@ public class Calculadora {
     }
 
 
-    public boolean oper2(int a) {
+    public boolean esDivisibleEntre2(int numero) {
 
-        boolean r;
+        boolean esDivisible;
 
-        if ( a % 2 == 0 ) {
-            r = true;
+        if ( numero % 2 == 0 ) {
+            esDivisible = true;
         } else {
-            r = false;
+            esDivisible = false;
         }
 
-        return r;
+        return esDivisible;
     }
 
 

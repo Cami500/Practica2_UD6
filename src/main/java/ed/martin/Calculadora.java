@@ -65,5 +65,65 @@ public class Calculadora {
 	public int diveix(int a, int b) {
 		return a/b;
 	}
+	
+	
+	/**
+	 * 
+	 * @param num
+	 * @param exponente
+	 * @return
+	 */
+	
+	public int potencia ( int num , int exponente ){
+
+	    int result = 1;
+
+	    for ( int i = 0; i < exponente ; i++ ){
+	        result = result * num;
+	    }
+
+	    return result; 
+	}
+
+
+	/**
+	 * 
+	 * @param num
+	 * @return
+	 */
+	
+	public boolean isPar ( int num ){
+
+	    boolean isPar;
+
+	    if ( num % 2 == 0) {
+	        isPar = true;
+	    } else {
+	        isPar = false;
+	    }
+
+	    return isPar;
+	}
+
+
+	/**
+	 * 
+	 * @param decimal
+	 * @return
+	 */
+	
+	public String decimal2Binary(int decimal){
+
+	    String result = "";
+	    int num = decimal;
+	    int resto;
+
+	    while ( num > 0) {
+	        resto = num % 2;
+	        result = resto + result;
+	        num = num / 2;
+	    }
+	    return result;
+	}
 
 }

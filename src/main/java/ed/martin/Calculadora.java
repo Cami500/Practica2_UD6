@@ -68,7 +68,8 @@ public class Calculadora {
 	
 	
 	/**
-	 * 
+	 * El método es para sacar la potencia de numero pasado como parametro, este recorre un for de longitud del eponente
+	 * dentro del for el resultado que es 1 se va multiplicanto por el numero pasado como parametro.
 	 * @param num
 	 * @param exponente
 	 * @return
@@ -87,7 +88,8 @@ public class Calculadora {
 
 
 	/**
-	 * 
+	 * Con este método sabremos si el número pasado como parametro es para o impar, si es true es par y si retorna false es impar
+	 * Para saber el resultado en un if comparamos que el numero modulo de 2 es igual a 0 para retornar si es par.
 	 * @param num
 	 * @return
 	 */
@@ -107,7 +109,7 @@ public class Calculadora {
 
 
 	/**
-	 * 
+	 * Convierte un número entero en su representación en binario.
 	 * @param decimal
 	 * @return
 	 */

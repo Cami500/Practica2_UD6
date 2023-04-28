@@ -1,7 +1,7 @@
 package ed.izan;
 
 public class Calculadora {
-	
+	//Esta clase permite realizar cálculos matemáticos entre dos números enteros
 	public int suma(int a, int b) {
 		return a + b;
 	}

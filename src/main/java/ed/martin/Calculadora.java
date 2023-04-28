@@ -70,9 +70,9 @@ public class Calculadora {
 	/**
 	 * El método es para sacar la potencia de numero pasado como parametro, este recorre un for de longitud del eponente
 	 * dentro del for el resultado que es 1 se va multiplicanto por el numero pasado como parametro.
-	 * @param num
-	 * @param exponente
-	 * @return
+	 * @param num numero que queremos saber la potencia
+	 * @param exponente numero que recorre el for, por lo tanto es el exponente
+	 * @return retorna la potencia del numero pasado como parametro.
 	 */
 	
 	public int potencia ( int num , int exponente ){
@@ -90,8 +90,8 @@ public class Calculadora {
 	/**
 	 * Con este método sabremos si el número pasado como parametro es para o impar, si es true es par y si retorna false es impar
 	 * Para saber el resultado en un if comparamos que el numero modulo de 2 es igual a 0 para retornar si es par.
-	 * @param num
-	 * @return
+	 * @param num numero que queremos saber si es par
+	 * @return true si es par o false si es impar
 	 */
 	
 	public boolean isPar ( int num ){
@@ -110,8 +110,8 @@ public class Calculadora {
 
 	/**
 	 * Convierte un número entero en su representación en binario.
-	 * @param decimal
-	 * @return
+	 * @param decimal numero del cual queremos saber el binario
+	 * @return cadena String con el binario de 1s y 0s
 	 */
 	
 	public String decimal2Binary(int decimal){

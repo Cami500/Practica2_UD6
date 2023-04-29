@@ -19,8 +19,8 @@ public class Calculadora {
 	 **/
 
 	/**
-	 * Método que permite realizar una suma entre dos números enteros.
-	 * @return la suma entre dos números.
+	 * Método que permite realizar la suma entre dos números enteros.
+	 * @return La suma entre dos números.
 	 * @throws InputMismatchException;
 	 * @param a;
 	 * @param b;
@@ -35,8 +35,21 @@ public class Calculadora {
 		return suma;
 	}
 
+	/**
+	 * Método que permite realizar la resta entre dos números enteros.
+	 * @return La resta entre dos números.
+	 * @throws InputMismatchException;
+	 * @param a;
+	 * @param b;
+	 **/
 	public int resta(int a, int b) {
-		return a - b;
+		int resta = 0;
+		try {
+			resta = a - b;
+		}catch (InputMismatchException e) {
+			System.out.println("Dato introducido incorrecto");
+		}
+		return resta;
 	}
 
 	public int multiplica(int a, int b){

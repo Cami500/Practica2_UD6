@@ -24,7 +24,7 @@ public class Calculadora {
 	 * @throws InputMismatchException;
 	 * @param a;
 	 * @param b;
-	 * **/
+	 **/
 	public int suma(int a, int b) {
 		int suma = 0;
 		try {

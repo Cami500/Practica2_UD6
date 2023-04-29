@@ -1,8 +1,12 @@
 package ed.izan;
 
-import java.io.IOException;
 import java.util.InputMismatchException;
 
+/**
+ * @author Izan Blanes Aracil
+ * @version 3.7
+ * @version 2.1 junio de 2022;
+ **/
 public class Calculadora {
 	//Esta clase permite realizar cálculos matemáticos entre dos números enteros.
 
@@ -11,12 +15,6 @@ public class Calculadora {
 	* métodos de sumar, restar, multiplicar y dividir para que después, se llamen creando el objeto calculadora
 	* dependiendo del constructor que se crea, porque estos métodos son objetos, es decir de la propia clase.
 	*/
-
-	/**
-	 * @author Izan Blanes Aracil
-	 * @version 3.7
-	 * @deprecated 2.1 junio de 2022;
-	 **/
 
 	/**
 	 * Método que permite realizar la suma entre dos números enteros.
@@ -59,7 +57,7 @@ public class Calculadora {
 	 * @param a;
 	 * @param b;
 	 **/
-	public int multiplica(int a, int b){
+	public int multiplica(int a, int b) throws InputMismatchException{
 		int multiplicacion = 0;
 		try {
 			multiplicacion = a * b;

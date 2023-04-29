@@ -62,7 +62,7 @@ public class Calculadora {
 	public int multiplica(int a, int b){
 		int multiplicacion = 0;
 		try {
-			multiplicacion = a - b;
+			multiplicacion = a * b;
 		}catch (InputMismatchException e) {
 			System.out.println("Dato introducido incorrecto");
 		}
@@ -70,8 +70,25 @@ public class Calculadora {
 
 	}
 
+	/**
+	 * Método que permite realizar la divisón entre dos números enteros. Si el número a dividir tanto en los parámetros
+	 * a o b lanzará una excepción que indicará que el número a dividir no puede ser 0.
+	 * @return La división entre dos números
+	 * @throws InputMismatchException;
+	 * @throws ArithmeticException;
+	 * @param a;
+	 * @param b;
+	 **/
 	public int diveix(int a, int b) {
-		return a/b;
+		int division = 0;
+		try {
+			division = a / b;
+		}catch (InputMismatchException e) {
+			System.out.println("Dato introducido incorrecto");
+		}catch (ArithmeticException ex) {
+			System.out.println("No se puede dividir por cero en la división");
+		}
+		return division;
 	}
 
 }

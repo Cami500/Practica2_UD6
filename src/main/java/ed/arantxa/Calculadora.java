@@ -57,6 +57,40 @@ public class Calculadora {
 	public int diveix(int a, int b) {
 		return a/b;
 	}
+	public int potencia ( int a , int n ){
 
+		int t = 1;
+
+		for ( int i = 0; i < n ; i++ ){
+			t = t * a;
+		}
+
+		return t;
+	}
+	public boolean esPar ( int a ){
+
+		boolean r;
+
+		if ( a % 2 == 0) {
+			r = true;
+		} else {
+			r = false;
+		}
+
+		return r;
+	}
+	public String decimalABinario(int a) {
+
+		String r = "";
+		int v = a;
+		int v1;
+
+		while (v > 0) {
+			v1 = v % 2;
+			r = v1 + r;
+			v = v / 2;
+		}
+		return r;
+	}
 }
 

@@ -52,8 +52,22 @@ public class Calculadora {
 		return resta;
 	}
 
+	/**
+	 * Método que permite realizar la multiplicación entre dos números enteros.
+	 * @return La multiplicación entre dos números.
+	 * @throws InputMismatchException;
+	 * @param a;
+	 * @param b;
+	 **/
 	public int multiplica(int a, int b){
-		return a*b;
+		int multiplicacion = 0;
+		try {
+			multiplicacion = a - b;
+		}catch (InputMismatchException e) {
+			System.out.println("Dato introducido incorrecto");
+		}
+		return multiplicacion;
+
 	}
 
 	public int diveix(int a, int b) {

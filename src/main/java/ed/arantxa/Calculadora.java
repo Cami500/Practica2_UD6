@@ -57,6 +57,13 @@ public class Calculadora {
 	public int diveix(int a, int b) {
 		return a/b;
 	}
+	/**
+	 * Este método realiza la operación de elevar un numero a su potencia.
+	 *
+	 * @param a el número a elevar a una potencia
+	 * @param n el exponente de la potencia
+	 * @return el resultado de elevar "a" a la potencia "n"
+	 */
 	public int potencia ( int a , int n ){
 
 		int t = 1;
@@ -67,6 +74,12 @@ public class Calculadora {
 
 		return t;
 	}
+	/**
+	 * Este método comprueba si un número entero es par o impar.
+	 *
+	 * @param a el número entero a comprobar
+	 * @return true si el número es par, false si es impar
+	 */
 	public boolean esPar ( int a ){
 
 		boolean r;
@@ -79,6 +92,12 @@ public class Calculadora {
 
 		return r;
 	}
+	/**
+	 * Este método convierte un número decimal a su equivalente en binario.
+	 *
+	 * @param a el número decimal a convertir
+	 * @return el número en su representación binaria como una cadena de caracteres
+	 */
 	public String decimalABinario(int a) {
 
 		String r = "";

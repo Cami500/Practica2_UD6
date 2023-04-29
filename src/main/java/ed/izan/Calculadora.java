@@ -10,7 +10,6 @@ public class Calculadora {
 	*/
 
 	/**
-	 *
 	 * @author Izan Blanes Aracil
 	 * @version 3.7
 	 * @deprecated 2.1 junio de 2022;

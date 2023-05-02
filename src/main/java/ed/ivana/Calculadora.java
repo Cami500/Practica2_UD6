@@ -29,7 +29,7 @@ public class Calculadora {
 	 * @param b El segundo numero entero que se resta del primer numero.
 	 * @return La resta de a y b.
 	 */
-	
+
 	public int resta(int a, int b) {
 		return a - b;
 	}
@@ -41,7 +41,7 @@ public class Calculadora {
 	 * @param b El segundo numero entero a multiplicar.
 	 * @return El resultado de la multiplicación de a por b.
 	 */
-	
+
 	public int multiplica(int a, int b){
 		return a*b;
 	}
@@ -56,6 +56,64 @@ public class Calculadora {
 	 */
 	public int diveix(int a, int b) {
 		return a/b;
+	}
+
+	/**
+	 * Calcula la potencia de un número entero elevado a una potencia entera.
+	 *
+	 * @param base La base de la potencia.
+	 * @param exponente Él exponente de la potencia.
+	 * @return Él resultado de la operación de la potencia.
+	 */
+
+	public int calculaPotencia(int base , int exponente ){
+
+		int resultado = 1;
+
+		for ( int i = 0; i < exponente ; i++ ){
+			resultado = resultado * base;
+		}
+
+		return resultado;
+	}
+
+	/**
+	 * Comprueba si un número entero es par o impar.
+	 *
+	 * @param numero El numero entero a comprobar.
+	 * @return Si el numero es par, devuelve true y si es impar, devuelve false.
+	 */
+
+	public boolean esNumeroPar(int numero ){
+
+		boolean esPar;
+
+		if ( numero % 2 == 0) {
+			esPar = true;
+		} else {
+			esPar = false;
+		}
+
+		return esPar;
+	}
+
+	/**
+	 * Convierte un número entero en su representación binaria.
+	 *
+	 * @param decimal El numero entero a convertir.
+	 */
+
+	public void covertirDecimalABinario(int decimal) {
+
+		String binario = "";
+		int valor = decimal;
+		int resto;
+
+		while (valor > 0) {
+			resto = valor % 2;
+			binario = resto + binario;
+			valor = valor / 2;
+		}
 	}
 }
 

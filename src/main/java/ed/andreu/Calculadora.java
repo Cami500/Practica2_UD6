@@ -3,7 +3,6 @@ package ed.andreu;
 	 * Esta clase sirve para una calculadora como en sus metodos uno sirva para somar dos numeros, otro metodo
 	 sirve para restar dos numeros, otro para multiplicar dos numeros y otro para dividir dos numeros.
 
-
 	 @author  Andreu Puchades Pascual
 	 @version La versión actual de la clase (3.7)
 	 @since Está disponible desde la versión 2.1, junio de 2022.

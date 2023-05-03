@@ -38,7 +38,12 @@ public class Calculadora {
 		System.out.println(resultadoDiveix);
 	}
 
-
+	/**@kicoCarbonell
+	 * Calcula la potencia de un número
+	 * @param base la base de la potencia
+	 * @param exponent exponent de la potencia
+	 * @return la potencia elevada al exponent
+	 */
 	public int calcularPotencia ( int base , int exponent ){
 
 		int resultat = 1;
@@ -49,6 +54,12 @@ public class Calculadora {
 
 		return resultat;
 	}
+
+	/**@kicoCarbonell
+	 * verifica si un numero enter es par
+	 * @param numero el numero a verificar
+	 * @return true si el numero es par false si es impar
+	 */
 	public boolean esPar(int numero){
 
 		boolean resultatPar;
@@ -60,6 +71,12 @@ public class Calculadora {
 		}
 		return resultatPar;
 	}
+
+	/**@kicoCarbonell
+	 * converteix un numero enter al seu equivalen en binari en format string
+	 * @param numero el numero enter a convertir
+	 * @return una cadena de caracters que representa el seu valor en binari
+	 */
 	public String convertirABinari(int numero){
 
 		String binario = "";

@@ -50,6 +50,7 @@ public class Calculadora {
 	 *
 	 * @param a El primer número entero.
 	 * @param b El segundo número entero (no puede ser cero).
+	 * @throws ArithmeticException Si el segundo número es cero.
 	 * @return El resultado.
        */
 	

@@ -82,7 +82,6 @@ public class Calculadora {
 		String binario = "";
 		int cocient = numero;
 		int resto;
-
 		while ( cocient > 0) {
 			resto = cocient % 2;
 			binario = resto + binario;
@@ -90,6 +89,5 @@ public class Calculadora {
 		}
 		return binario;
 	}
-
 }
 

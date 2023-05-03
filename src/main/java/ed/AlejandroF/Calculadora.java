@@ -1,10 +1,11 @@
-package ed.karlos;
+package ed.AlejandroF;
 /**
- * Esta clase define una calculadora con cuatro métodos que realizan las operaciones básicas de suma, resta, multiplicación y división.
+ * Esta clase define una calculadora con cuatro métodos que realizan las operaciones básicas
+ * de suma, resta, multiplicación y división.
  *
  * @version 3.7
  * @since 2.1
- * @author Karlos Andrés Chávez Abrego
+ * @author Alejandro Fernandez Marti
  */
 
 public class Calculadora {

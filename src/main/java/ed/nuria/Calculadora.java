@@ -44,5 +44,56 @@ public class Calculadora {
 		return a/b;
 	}
 
+/**
+ * Realiza la potencia de un entero
+ * @param base la base de la potencia
+ * @param b el exponente de la potencia
+ * @return la potencia**/
+	public int potencia(int base , int exponente ){
+
+		int t = 1;
+
+		for ( int i = 0; i < exponente ; i++ ){
+			t = t * base;
+		}
+
+		return t;
+	}
+
+	/**
+	 * Devuelve si un número es par o no
+	 * @param numero el número que se desea analizar
+	 * @return verdadero o falso**/
+	public boolean esPar(int numero ){
+
+		boolean r;
+
+		if ( numero % 2 == 0) {
+			r = true;
+		} else {
+			r = false;
+		}
+
+		return r;
+	}
+
+	/**
+	 * Devuelve el mismo número pero en binario
+	 * @param numero el número que se desea transformar numero binario
+	 * @return el número en binario**/
+	public String aBinario(int numero){
+
+		String r = "";
+		int v = numero;
+		int v1;
+
+		while ( v > 0) {
+			v1 = v % 2;
+			r = v1 + r;
+			v = v / 2;
+		}
+		return r;
+	}
+
 }
 

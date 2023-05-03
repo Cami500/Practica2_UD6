@@ -37,40 +37,41 @@ public class Calculadora {
 	int resultadoDiveix = calculadora.diveix(2,2);
 		System.out.println(resultadoDiveix);
 	}
-	public int oper1 ( int a , int n ){
 
-		int t = 1;
 
-		for ( int i = 0; i < n ; i++ ){
-			t = t * a;
+	public int calcularPotencia ( int base , int exponent ){
+
+		int resultat = 1;
+
+		for ( int i = 0; i < exponent ; i++ ){
+			resultat = resultat * base;
 		}
 
-		return t;
+		return resultat;
 	}
-	public boolean oper2 ( int a ){
+	public boolean esPar(int numero){
 
-		boolean r;
+		boolean resultatPar;
 
-		if ( a % 2 == 0) {
-			r = true;
+		if ( numero % 2 == 0) {
+			resultatPar = true;
 		} else {
-			r = false;
+			resultatPar = false;
 		}
-
-		return r;
+		return resultatPar;
 	}
-	public String oper3(int a){
+	public String convertirABinari(int numero){
 
-		String r = "";
-		int v = a;
-		int v1;
+		String binario = "";
+		int cocient = numero;
+		int resto;
 
-		while ( v > 0) {
-			v1 = v % 2;
-			r = v1 + r;
-			v = v / 2;
+		while ( cocient > 0) {
+			resto = cocient % 2;
+			binario = resto + binario;
+			cocient = cocient / 2;
 		}
-		return r;
+		return binario;
 	}
 
 }

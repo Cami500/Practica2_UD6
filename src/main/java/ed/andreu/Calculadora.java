@@ -64,45 +64,43 @@ public class Calculadora {
 
 	}
 
-	public int oper1 ( int a , int n ){
+	public int elevarNumero ( int base , int exponente ){
 
-		int t = 1;
+		int resultado = 1;
 
-		for ( int i = 0; i < n ; i++ ){
-			t = t * a;
+		for ( int i = 0; i < exponente ; i++ ){
+			resultado = resultado * base;
 		}
 
-		return t;
+		return resultado;
 	}
+	public boolean esNumeroPar ( int numero ){
 
+		boolean esNumeroPar;
 
-	public boolean oper2 ( int a ){
-
-		boolean r;
-
-		if ( a % 2 == 0) {
-			r = true;
+		if ( numero % 2 == 0) {
+			esNumeroPar = true;
 		} else {
-			r = false;
+			esNumeroPar = false;
 		}
 
-		return r;
+		return esNumeroPar;
 	}
 
 
-	public String oper3(int a){
+	public String convertirBinario(int numeroDecimal){
 
-		String r = "";
-		int v = a;
-		int v1;
+		String resultado = "";
+		int numero = numeroDecimal;
+		int resto;
 
-		while ( v > 0) {
-			v1 = v % 2;
-			r = v1 + r;
-			v = v / 2;
+		while ( numero > 0) {
+			resto = numero % 2;
+			resultado = resto + resultado;
+			numero = numero / 2;
 		}
+		return resultado;
 	}
-
 }
 
 

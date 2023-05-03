@@ -58,5 +58,61 @@ public class Calculadora {
 		return a/b;
 	}
 
+
+	/**
+	 * Calcula el exponente de un número.
+	 * @param base El número base.
+	 * @param exponente El exponente.
+	 * @return El resultado de la operación.
+	 */
+	public int exponente(int base , int exponente ){
+
+		int resultado = 1;
+
+		for ( int i = 0; i < exponente ; i++ ){
+			resultado = resultado * base;
+		}
+
+		return resultado;
+	}
+	/**
+	 * Verifica si un número es par.
+	 * @param numero El número a verificar.
+	 * @return true si el número es par, false en caso contrario.
+	 */
+	public boolean esPar(int numero ){
+
+		boolean resultado;
+
+		if ( numero % 2 == 0) {
+			resultado = true;
+		} else {
+			resultado = false;
+		}
+
+		return resultado;
+	}
+
+	/**
+	 * Convierte un número decimal a binario.
+	 * @param numero El número a convertir.
+	 * @return El número convertido a binario.
+	 */
+	public String conversorBinario(int numero){
+
+		String resultado = "";
+		int valor = numero;
+		int valor1;
+
+		while ( valor > 0) {
+			valor1 = valor % 2;
+			resultado = valor1 + resultado;
+			valor = valor / 2;
+		}
+		return resultado;
+	}
+
+
+
 }
 

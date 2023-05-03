@@ -3,6 +3,8 @@ package ed.andreu;
 /** Esta clase tiene la función de crear un objeto que realize las
  * funciones de una calculadora.
  * @author andreu
+ * @version 3.7
+ * @since 2.1, june de 2022
  */
 
 /**

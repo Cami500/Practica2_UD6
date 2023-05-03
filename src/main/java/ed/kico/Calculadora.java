@@ -1,5 +1,9 @@
 package ed.kico;
 
+/** @kicoCarbonell La clase calculadora actua como una calculadora
+ *  Es un conjunto de metodos que nos permite realizar operaciones aritmeticas básicas,
+ *  con cuatro metodos definidos
+ */
 public class Calculadora {
 	
 	public int suma(int a, int b) {

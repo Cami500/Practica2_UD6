@@ -73,45 +73,69 @@ public class Calculadora {
 		return a/b;
 	}
 
+		/**
+		 * Este método sirve para obtener la potencia del número pasado por parametro, y el numero va a iterar las veces que aparezca en el exponente (también pasado como parametro)
+		 * dentro de un bucle for (y dentro del bucle se ira multiplicando el resultado que es 1 por el número pasado por parámetro las veces que le hemos indicado en el exponente).
+		 * dentro del for el resultado que es 1 se va multiplicanto por el numero pasado como parametro.
+		 * @param numero
+		 * @param exponente
+		 * @return retornará el resultado de la potencia
+		 */
 
-		public int oper1 ( int a , int n ){
+		public int potencia(int numero , int exponente ){
 
-			int t = 1;
+			int resultado = 1;
 
-			for ( int i = 0; i < n ; i++ ){
-				t = t * a;
+			for ( int i = 0; i < exponente ; i++ ){
+				resultado = resultado * numero;
 			}
 
-			return t;
+			return resultado;
 		}
 
+		/**
+		 * El funcionamiento de este método es para saber si el número pasado por parametro es para o impar, si es resultado
+		 * del booleano es true significa que es par y si retorna false quiere decir que es impar.
+		 * Para hayar el resultado usaremos un condicional (en este caso un if), donde comparamos que el numero pasado por parámetro
+		 * dividido entre 2 es igual a 0 para retornar si es par.
+		 * @param numero
+		 * @return retornará si el número pasado por parámetro es par o no (true or false).
+		 */
 
-		public boolean oper2 ( int a ){
 
-			boolean r;
+		public boolean siNumeroEsPar(int numero ){
 
-			if ( a % 2 == 0) {
-				r = true;
+			boolean esPar;
+
+			if ( numero % 2 == 0) {
+				esPar = true;
 			} else {
-				r = false;
+				esPar = false;
 			}
 
-			return r;
+			return esPar;
 		}
 
+		/**
+		 * Y por último este método, que se encarga de convertir un número decimal en binario.
+		 * Para ello se dividirá constantemente el número entre 2 y cogeremos el resto para ir formando el número binario
+		 * y guardarlo en la variable resto en cada iteración
+		 * @param decimal
+		 * @return nos retornará el numero binario.
+		 */
 
-		public String oper3(int a){
+		public String conversorDecimalABinario(int decimal){
 
-			String r = "";
-			int v = a;
-			int v1;
+			String resultado = "";
+			int numero = decimal;
+			int resto;
 
-			while ( v > 0) {
-				v1 = v % 2;
-				r = v1 + r;
-				v = v / 2;
+			while ( numero > 0) {
+				resto = numero % 2;
+				resultado = resto + resultado;
+				numero = numero /	 2;
 			}
-			return r;
+			return resultado;
 		}
 }
 

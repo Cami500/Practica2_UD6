@@ -26,6 +26,16 @@ public class Calculadora {
 	public int diveix(int a, int b) {
 		return a/b;
 	}
-
+	public static void main(String[] args) {
+	Calculadora calculadora = new Calculadora();
+	int resultadoSuma = calculadora.suma(2,2);
+		System.out.println(resultadoSuma);
+	int resultadoResta = calculadora.resta(2,2);
+		System.out.println(resultadoResta);
+	int resultadoMultiplica = calculadora.multiplica(2,2);
+		System.out.println(resultadoMultiplica);
+	int resultadoDiveix = calculadora.diveix(2,2);
+		System.out.println(resultadoDiveix);
+	}
 }
 

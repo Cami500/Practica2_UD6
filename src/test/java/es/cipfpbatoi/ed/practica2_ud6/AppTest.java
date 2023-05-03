@@ -7,8 +7,15 @@ import org.junit.Test;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class AppTest
 {
+    /**
+     * Constructor de la clase calculadora
+     * */
+    public AppTest() {
+    }
+
+
     /**
      * Rigorous Test :-)
      */

@@ -15,7 +15,11 @@ package ed.andreu;
  * @since 2.1, june de 2022
  */
 public class Calculadora {
-
+	/**
+	 * Constructor de la clase calculadora
+	 * */
+	public Calculadora() {
+	}
 
 	/**
 	 * Hace la suma de los dos números pasados al metodo como parametro
@@ -27,7 +31,6 @@ public class Calculadora {
 		return a + b;
 
 	}
-
 	/**
 	 * Hace la resta de los dos números pasados al metodo como parametro
 	 * @param a es el primer valor que se introduce para ser restado

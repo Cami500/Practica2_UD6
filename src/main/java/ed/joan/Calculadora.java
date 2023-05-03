@@ -1,19 +1,19 @@
 package ed.joan;
+
 /**
- * Esta clase define una calculadora con cuatro métodos que realizan las operaciones básicas de suma, resta, multiplicación y división.
- * @version 3.7
- * @since 2.1
+ * Basicamente es una clase que contine 4 metodos uno para dividir, otro para multiplicar, otro para sumar y por último uno para restar
+ * @version  3.7
+ * @since  2.1
  * @author Joan Company Richart
  */
 
 public class Calculadora {
 
 	/**
-	 * Devuelve la suma de dos números enteros.
-	 *
+	 * Hace una suma con 2 números enteros.
 	 * @param a El primer número entero.
 	 * @param b El segundo número entero.
-	 * @return El resultado de la suma de los dos números enteros.
+	 * @return És el resultado de la suma.
 	 */
 
 	public int suma(int a, int b) {
@@ -21,22 +21,20 @@ public class Calculadora {
 	}
 
 	/**
-	 * Devuelve la resta de dos números enteros.
-	 *
+	 * Hace una resta de con dos números enteros.
 	 * @param a El primer número entero.
 	 * @param b El segundo número entero.
-	 * @return El resultado de la resta de los dos números enteros.
+	 * @return És el resultado de la resta.
 	 */
 	
 	public int resta(int a, int b) {
 		return a - b;
 	}
 	/**
-	 * Devuelve el resultado de la multiplicación de dos números enteros.
-	 *
+	 * Hace una multiplicación con dos números enteros.
 	 * @param a El primer número entero.
 	 * @param b El segundo número entero.
-	 * @return El resultado de los dos números enteros.
+	 * @return El resultado de la multiplicación.
 	 */
 	
 	
@@ -45,12 +43,11 @@ public class Calculadora {
 	}
 	
 	/**
-	 * Devuelve la división de dos números enteros.
-	 *
+	 * Hace una división de dos números enteros.
 	 * @param a El primer número entero.
 	 * @param b El segundo número entero (no puede ser cero).
 	 * @throws ArithmeticException Si el segundo número es cero.
-	 * @return El resultado.
+	 * @return El resultado de la division.
        */
 	
 	public int diveix(int a, int b) {

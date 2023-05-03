@@ -77,8 +77,8 @@ public class Calculadora {
 		 * Este método sirve para obtener la potencia del número pasado por parametro, y el numero va a iterar las veces que aparezca en el exponente (también pasado como parametro)
 		 * dentro de un bucle for (y dentro del bucle se ira multiplicando el resultado que es 1 por el número pasado por parámetro las veces que le hemos indicado en el exponente).
 		 * dentro del for el resultado que es 1 se va multiplicanto por el numero pasado como parametro.
-		 * @param numero
-		 * @param exponente
+		 * @param numero este es el número del cual vamos a querer saber la potencia
+		 * @param exponente la veces (el número) que vamos a recorrer el bucle
 		 * @return retornará el resultado de la potencia
 		 */
 
@@ -98,7 +98,7 @@ public class Calculadora {
 		 * del booleano es true significa que es par y si retorna false quiere decir que es impar.
 		 * Para hayar el resultado usaremos un condicional (en este caso un if), donde comparamos que el numero pasado por parámetro
 		 * dividido entre 2 es igual a 0 para retornar si es par.
-		 * @param numero
+		 * @param numero este es el número que vamos a querer saber si es par
 		 * @return retornará si el número pasado por parámetro es par o no (true or false).
 		 */
 
@@ -120,7 +120,7 @@ public class Calculadora {
 		 * Y por último este método, que se encarga de convertir un número decimal en binario.
 		 * Para ello se dividirá constantemente el número entre 2 y cogeremos el resto para ir formando el número binario
 		 * y guardarlo en la variable resto en cada iteración
-		 * @param decimal
+		 * @param decimal numero el cual vamos a convertir a binario
 		 * @return nos retornará el numero binario.
 		 */
 

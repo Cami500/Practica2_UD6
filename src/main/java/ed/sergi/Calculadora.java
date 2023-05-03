@@ -6,7 +6,7 @@ package ed.sergi;
  * En ella podremos realizar las operaciones que nos sean convenientes
  * </p>
  * @author Sergi
- * @version 3.7
+ * @version  3.7
  * @since 2.1, junio de 2022
  */
 public class Calculadora {

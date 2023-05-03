@@ -16,7 +16,7 @@ Realiza todas las capturas necesarias para indicar que has realizado la tarea
 
 ## 1. Modifica la clase `Calculadora.java`
 
-* Renombra el paquete `ed.camilo` a `ed.<tu_nombre>`
+* Renombra el paquete `ed.izan` a `ed.<tu_nombre>`
 
 ## 2. **Documenta** el código de la clase `Calculadora` usando comentarios `JavaDoc`:
 

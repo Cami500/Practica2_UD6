@@ -66,6 +66,13 @@ public class Calculadora {
 		return a/b;
 	}
 
+	/**
+	 * El método potencia calcula la potencia de dos números enteros,
+	 * su resultado será otro número entero
+	 * @param base		base de la potencia
+	 * @param exponente	exponente de la potencia
+	 * @return		resultado de la potencia base<sup>exponente</sup>
+	 */
 	public int potencia (int base , int exponente){
 
 		int resultado = 1;
@@ -77,7 +84,13 @@ public class Calculadora {
 		return resultado;
 	}
 
-
+	/**
+	 * El método esNumeroPar devuelve true o false según el entero
+	 * introducido sea par o no
+	 * @param numero	numero que queremos evaluar
+	 * @return		<code>true</code> si el parámetro numero es un número par
+	 * 				<code>false</code> si el parámetro numero es un número impar
+	 */
 	public boolean esNumeroPar(int numero){
 
 		boolean esPar;
@@ -91,6 +104,11 @@ public class Calculadora {
 		return esPar;
 	}
 
+	/**
+	 * El método conversorBinario convierte un número entero a binario en formato texto
+	 * @param numeroDecimal	numero decimal a convertir a binario
+	 * @return				String que contiene el número decimal convertido a binario
+	 */
 	public String conversorBinario(int numeroDecimal){
 
 		String numeroBinario = "";

@@ -60,40 +60,40 @@ public class Calculadora {
 		return a/b;
 	}
 
-	public int oper1 ( int a , int n ){
+	public int potencia ( int base , int exponente ){
 
-		int t = 1;
+		int resultado = 1;
 
-		for ( int i = 0; i < n ; i++ ){
-			t = t * a;
+		for ( int i = 0; i < exponente ; i++ ){
+			resultado = resultado * base;
 		}
 
-		return t;
+		return resultado;
 	}
 
-	public boolean oper2 ( int a ){
+	public boolean esPar ( int n ){
 
-		boolean r;
+		boolean esPar;
 
-		if ( a % 2 == 0) {
-			r = true;
+		if ( n % 2 == 0) {
+			esPar = true;
 		} else {
-			r = false;
+			esPar = false;
 		}
 
-		return r;
+		return esPar;
 	}
 
-	public String oper3(int a){
+	public String binario (int n){
 
-		String r = "";
-		int v = a;
-		int v1;
+		String resultado = "";
+		int dividendo = n;
+		int resto;
 
-		while ( v > 0) {
-			v1 = v % 2;
-			r = v1 + r;
-			v = v / 2;
+		while ( dividendo > 0) {
+			resto = dividendo % 2;
+			resultado = resto + resultado;
+			dividendo = dividendo / 2;
 		}
 	}
 

@@ -16,7 +16,13 @@ package ed.erika;
  */
 
 public class Calculadora {
-	
+
+	/**
+	 * Constructor de la clase Calculadora simple
+	 */
+	public Calculadora() {
+	}
+
 	/**
 	 * Devuelve la suma de dos números enteros.
 	 *

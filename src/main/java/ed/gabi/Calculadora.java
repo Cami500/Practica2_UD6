@@ -8,7 +8,12 @@ package ed.gabi;
  */
 
 public class Calculadora {
-	
+
+	/** Constructor clase Calculadora */
+
+	public Calculadora() {
+	}
+
 	/**
 	 * Devuelve la suma de dos números enteros
 	 * @param a El primer número entero.
@@ -50,7 +55,7 @@ public class Calculadora {
 	 * @return El resultado.
        */
 	
-	public int diveix(int a, int b) {
+	public int divideix(int a, int b) {
 		return a/b;
 	}
 

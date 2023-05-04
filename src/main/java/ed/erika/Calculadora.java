@@ -83,6 +83,14 @@ public class Calculadora {
 	 * @throws ArithmeticException Si el segundo número es cero.
 	 * @return El resultado.
        */
+
+	/**
+	 * Devuelve la división de los dos números enteros que se le pasa al método.
+	 *
+	 * @param a Un número entero
+	 * @param b Un número entero
+	 * @return El total de la división de los números enteros que se han pasado como parámetros
+	 */
 	
 	public int diveix(int a, int b) {
 		return a/b;

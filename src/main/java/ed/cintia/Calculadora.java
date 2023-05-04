@@ -1,21 +1,21 @@
 package ed.cintia;
 
 /**
- *La clase Calculadora sirve para realizar las cuatro operaciones matemáticas elementales.
+ *La clase Calculadora sirve para realizar las cuatro operaciones matemáticas elementales
+ * y otras más específicas.
  * <p>
  * Esta clase proporciona métodos para poder llevar a cabo operaciones matemáticas simples
- * con dos números enteros (a, b) y obtener su resultado.
- * Las operaciones básicas que se ofrecen en cada método son:
+ * con dos números enteros (a, b) y obtener su resultado. También ofrece otras funcionalidades matemáticas avanzadas.
+ * Las funcionalidades que se implementan en cada método son:
  * <ul>
  * 		<li>suma
  *		<li>resta
  * 		<li>multiplicación
  * 		<li>división
+ * 		<li>cálculo de potencias
+ * 		<li>verificación de número par
+ * 		<li>conversor de número decimal a binario
  * </ul>
- * <p>
- * Cada método solo realiza una operación matemática,
- * requieren 2 parámetros que serán de tipo int (números enteros)
- * y como resultado de la operación se devolverá otro número entero (int)
  *
  * @author Cintia Cantó Esteve
  * @version 3.7

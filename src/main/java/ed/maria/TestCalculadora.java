@@ -9,5 +9,8 @@ public class TestCalculadora {
         System.out.println(calculadora.resta( 39, 8));
         System.out.println(calculadora.multiplica(8, 9));
         System.out.println(calculadora.diveix(20, 5));
+        System.out.println(calculadora.potencia(2, 3));
+        System.out.println(calculadora.esParOImpar(44));
+        System.out.println(calculadora.decimalABinario(84758));
     }
 }

@@ -54,5 +54,58 @@ public class Calculadora {
 	public int diveix(int a, int b) {
 		return a/b;
 	}
+
+	/**
+	 * Devuelve el valor de multiplicar un numero un numero de veces consecutivo.
+	 *
+	 * @param num es el numero que vamos a multiplicar.
+	 * @param repeticiones es el numero de veces que vamos a multiplicar.
+	 * @return El resultado de multiplicación consecutiva de num.
+	 */
+	public int multiplicarSucesivamente(int num, int repeticiones) {
+
+		int total = 1;
+		for ( int i = 0; i < repeticiones; i++ ) {
+			total = total * num;
+		}
+		return total;
+	}
+
+	/**
+	 * Devuelve true/false de si el numero introducido es par o impar.
+	 *
+	 * @param num es el numero que vamos a comprobar.
+	 * @return Si es par(ture) o impar(false).
+	 */
+	public boolean esPar( int num ){
+		boolean esPar;
+		if ( num % 2 == 0) {
+			esPar = true;
+		} else {
+			esPar = false;
+		}
+		return esPar;
+	}
+
+	/**
+	 * Devuelve un numero binario del numero que le pasamos en decimal.
+	 * Se usa un algoritmo que usando el residuo y el cociente podemos sacar el numero binario, este se almacenara en un string que es numBinario.
+	 *
+	 * @param num es el numero que vamos a comprobar.
+	 * @return El numero en binario de num.
+	 */
+	public String decimalAbinario(int num){
+
+		String numBinario = "";
+		int cociente = num;
+		int residuo;
+
+		while (cociente > 0) {
+			residuo = cociente % 2;
+			num = residuo + num;
+			cociente = cociente / 2;
+		}
+		return numBinario;
+	}
 }
 

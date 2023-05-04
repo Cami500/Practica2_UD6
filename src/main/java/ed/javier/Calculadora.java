@@ -55,5 +55,62 @@ public class Calculadora {
 		return a/b;
 	}
 
+	/**
+	 * Este método devuelve el resultado de elevar un número con otro
+	 *
+	 * @param base El primer número entero que lo utilizaremos como base
+	 * @param exponente El segundo número entero que lo utilizaremos como exponente
+	 * @return El resultado del primer número elevado al segundo
+	 * **/
+	public int potencia (int base , int exponente){
+
+		int resultado = 1;
+
+		for ( int i = 0; i < exponente ; i++ ){
+			resultado = resultado * base;
+		}
+
+		return resultado;
+	}
+
+	/**
+	 * Este método devuelve un booleano indicando si el número entero pasado es par
+	 *
+	 * @param numero El número entero que comprobaremos si es par
+	 * @return El booleano que indica si el número es par
+	 * **/
+	public boolean esPar (int numero){
+
+		boolean esPar;
+
+		if (numero % 2 == 0) {
+			esPar = true;
+		} else {
+			esPar = false;
+		}
+
+		return esPar;
+	}
+
+	/**
+	 * Este método devuelve un String en forma binaria del número entero que le hemos pasado
+	 *
+	 * @param numero El número entero que pasaremos para pasar a binario
+	 * @return El resultado del número pasado a binario en formato texto
+	 * **/
+	public String conversorBinario(int numero){
+
+		String cadenaBinaria = "";
+		int dividendo = numero;
+		int resto;
+
+		while (dividendo > 0) {
+			resto = dividendo % 2;
+			cadenaBinaria = resto + cadenaBinaria;
+			dividendo = dividendo / 2;
+		}
+
+		return cadenaBinaria;
+	}
 }
 

@@ -60,5 +60,61 @@ public class Calculadora {
 		return a/b;
 	}
 
+	/**
+	 * Calcula la potencia de un número entero a la enésima potencia
+	 * @param base la base de la potencia
+	 * @param exponente el exponente de la potencia
+	 * @return el resultado de elevar la base al exponente
+	 */
+	public int potencia(int base , int exponente ){
+
+		int resultado = 1;
+
+		for ( int i = 0; i < exponente ; i++ ){
+			resultado = resultado * base;
+		}
+
+		return resultado;
+	}
+
+	/**
+	 * Determina si un número entero es par o no
+	 * @param numero el número entero a evaluar
+	 * @return true si el número es par, false si el número es impar
+	 */
+	public boolean esPar(int numero){
+
+		boolean resultado;
+
+		if (numero % 2 == 0) {
+			resultado = true;
+		} else {
+			resultado = false;
+		}
+
+		return resultado;
+	}
+
+	/**
+	 * Convierte un número entero a binario
+	 *
+	 * @param numero el número entero a convertir
+	 * @return la representación en binario del número como una cadena de caracteres
+	 */
+	public String convertirABinario(int numero){
+
+		String resultado = "";
+		int valor = numero;
+		int bit;
+
+		while (valor > 0) {
+			bit = valor % 2;
+			resultado = bit + resultado;
+			valor = valor / 2;
+		}
+
+		return resultado;
+	}
+
 }
 

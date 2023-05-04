@@ -9,6 +9,11 @@ import org.junit.Test;
  */
 public class AppTest 
 {
+	/**
+	 * Default constructor.
+	 */
+	public AppTest() {}
+	
     /**
      * Rigorous Test :-)
      */

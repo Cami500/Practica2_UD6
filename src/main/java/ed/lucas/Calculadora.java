@@ -2,7 +2,6 @@ package ed.lucas;
 
 /**
  * Realizar operaciones matemáticas básicas
- *
  * En esta clase se puden ejecutar las operaciones matemáticas de:
  * suma, resta, multiplicación y división
  *

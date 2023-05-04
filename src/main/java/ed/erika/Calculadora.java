@@ -24,6 +24,13 @@ public class Calculadora {
 	 * @param b El segundo número entero.
 	 * @return El resultado de la suma de los dos números enteros.
 	 */
+
+	/**
+	 * Devuelve la suma de los dos números enteros que se le pasa al método.
+	 * @param a Un número entero
+	 * @param b Otro número entero
+	 * @return El total de la suma de los dos números enteros que se han pasado
+	 */
 	
 	public int suma(int a, int b) {
 		return a + b;

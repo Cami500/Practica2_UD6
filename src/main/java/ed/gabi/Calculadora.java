@@ -1,4 +1,4 @@
-package ed.karlos;
+package ed.gabi;
 /**
  * Esta clase define una calculadora con cuatro métodos que realizan las operaciones básicas de suma, resta, multiplicación y división.
  *

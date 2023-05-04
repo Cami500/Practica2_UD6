@@ -8,5 +8,8 @@ public class TestCalculadora {
         System.out.println(calculadora.resta(2, 2));
         System.out.println(calculadora.multiplica(2, 2));
         System.out.println(calculadora.diveix(2, 2));
+        System.out.println(calculadora.calcularPotencia(2, 2));
+        System.out.println(calculadora.esPar(2));
+        System.out.println(calculadora.decimalABinario(2));
     }
 }

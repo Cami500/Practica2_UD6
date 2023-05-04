@@ -14,7 +14,7 @@ package ed.lucas;
 public class Calculadora {
 
 	/**
-	 * suma dos valores que se pasan por parámetros
+	 * Suma dos valores que se pasan por parámetros
 	 *
 	 * @param a operador 1
 	 * @param b operador 2
@@ -25,7 +25,7 @@ public class Calculadora {
 	}
 
 	/**
-	 * resta dos valores que se pasan por parámetros
+	 * Resta dos valores que se pasan por parámetros
 	 *
 	 * @param a operador 1
 	 * @param b operador 2
@@ -36,7 +36,7 @@ public class Calculadora {
 	}
 
 	/**
-	 * multiplica dos valores que se pasan por parámetros
+	 * Multiplica dos valores que se pasan por parámetros
 	 *
 	 * @param a operador 1
 	 * @param b operador 2
@@ -47,7 +47,7 @@ public class Calculadora {
 	}
 
 	/**
-	 * divide dos valores que se pasan por parámetros
+	 * Divide dos valores que se pasan por parámetros
 	 *
 	 * @param a operador 1
 	 * @param b operador 2
@@ -58,5 +58,54 @@ public class Calculadora {
 		return a/b;
 	}
 
-}
+	/**
+	 * Calcula la potencia de un número.
+	 *
+	 * @param base el número a elevar
+	 * @param exponente la potencia a la que elevar
+	 * @return int
+	 */
+	public int calcularPotencia(int base, int exponente) {
+		int resultado = 1;
+		for (int i = 0; i < exponente; i++) {
+			resultado *= base;
+		}
+		return resultado;
+	}
 
+	/**
+	 * Indica si un número es par o impar
+	 *
+	 * @param num El número a verificar
+	 * @return true si el número es par, false si es impar
+	 */
+	public boolean esPar(int num) {
+		boolean esPar;
+
+		esPar = num % 2 == 0;
+
+		return esPar;
+	}
+
+	/**
+	 * Convierte un número entero a binario
+	 *
+	 * @param decimal numero entero a convertir
+	 * @return String
+	 */
+	public String decimalABinario(int decimal){
+
+		StringBuilder binario = new StringBuilder();
+		int cociente = decimal;
+		int residuo;
+
+		while (cociente > 0) {
+			residuo = cociente % 2;
+			binario.insert(0, residuo);
+			cociente = cociente / 2;
+		}
+
+		return binario.toString();
+	}
+
+}

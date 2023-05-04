@@ -8,6 +8,8 @@ package ed.joan;
  */
 
 public class Calculadora {
+	/** contructor calculadora*/
+	public Calculadora() {}
 
 	/**
 	 * Hace una suma con 2 números enteros.

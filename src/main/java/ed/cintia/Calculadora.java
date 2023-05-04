@@ -55,7 +55,7 @@ public class Calculadora {
 	}
 
 	/**
-	 * El método divideix calculavel cociente de la división entre dos números enteros,
+	 * El método divideix calcula el cociente de la división entre dos números enteros,
 	 * su resultado será otro número entero
 	 * @param a		dividendo
 	 * @param b		divisor
@@ -64,6 +64,46 @@ public class Calculadora {
 	 */
 	public int diveix(int a, int b) {
 		return a/b;
+	}
+
+	public int potencia (int base , int exponente){
+
+		int resultado = 1;
+
+		for (int i = 0; i < exponente ; i++){
+			resultado = multiplica(resultado,base);
+		}
+
+		return resultado;
+	}
+
+
+	public boolean esNumeroPar(int numero){
+
+		boolean esPar;
+
+		if (numero % 2 == 0) {
+			esPar = true;
+		} else {
+			esPar = false;
+		}
+
+		return esPar;
+	}
+
+	public String conversorBinario(int numeroDecimal){
+
+		String numeroBinario = "";
+		int dividendo = numeroDecimal;
+		int resto;
+
+		while (dividendo > 0) {
+			resto = dividendo % 2;
+			numeroBinario = resto + numeroBinario;
+			dividendo = diveix(dividendo,2);
+		}
+
+		return numeroBinario;
 	}
 }
 

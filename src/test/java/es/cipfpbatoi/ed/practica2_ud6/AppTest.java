@@ -10,6 +10,12 @@ import org.junit.Test;
 public class AppTest 
 {
     /**
+     * Constructor
+     */
+    public AppTest() {
+    }
+
+    /**
      * Rigorous Test :-)
      */
     @Test

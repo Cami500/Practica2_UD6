@@ -8,7 +8,13 @@ package ed.Felipe;
  */
 
 public class Calculadora {
-	
+
+	/**
+	 * Constructor
+	 */
+	public Calculadora() {
+	}
+
 	/**
 	 * Devuelve la suma de dos números enteros.
 	 * @param a El primer número entero.

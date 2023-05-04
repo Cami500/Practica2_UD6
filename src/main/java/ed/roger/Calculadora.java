@@ -9,7 +9,13 @@ package ed.roger;
  * @author Roger Moll Seguí
  */
 public class Calculadora {
-	
+
+	/**
+	 * Constructor de la clase calculadora
+	 */
+	public Calculadora() {
+	}
+
 	/**
 	 * Suma y devuelve el resultado de dos numeros pasados como parámetro
 	 *

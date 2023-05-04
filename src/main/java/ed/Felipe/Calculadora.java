@@ -101,7 +101,6 @@ public class Calculadora {
 	 * Devuelve el resultado en binario de un número entero.
 	 * @param n El número entero
 	 * @return El resultado.
-	 * @throws El número n no puede ser negativo.
 	 */
 	public String binario (int n){
 

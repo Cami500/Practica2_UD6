@@ -7,6 +7,14 @@ package ed.erika;
  * @author Karlos Andrés Chávez Abrego
  */
 
+/**
+ * En esta clase se define una calculadora en la que se pueden realizar operaciones matemáticas básicas como la suma, resta, multiplicación y división de dos números enteros
+ *
+ * @author Érika Ballesteros Pascual
+ * @version 3.7
+ * @since 2.1
+ */
+
 public class Calculadora {
 	
 	/**

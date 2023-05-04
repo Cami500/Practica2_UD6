@@ -34,17 +34,7 @@ public class Calculadora {
 			System.out.println("No se puede dividir entre 0");
 		}
 
-		// Método potencia
-		int resultadoPotencia = miCalculadora.potencia(2, 3);
-		System.out.println("2 elevado a la 3 = " + resultadoPotencia);
 
-		// Método parImpar
-		boolean esPar = miCalculadora.parImpar(4);
-		System.out.println("El número 4 es par? " + esPar);
-
-		// Método binario
-		String resultadoBinario = miCalculadora.binario(10);
-		System.out.println("El número 10 en binario es: " + resultadoBinario);
 	}
 
 

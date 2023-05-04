@@ -9,9 +9,10 @@ package ed.jaume;
 
 public class Calculadora {
 
-	
-	public int suma(int a, int b) {
-		return a + b;
+	/**
+	 * Creamos el constructor
+	 */
+	public Calculadora() {
 	}
 
 	/**
@@ -21,11 +22,8 @@ public class Calculadora {
 	 * @param b Es el segundo número entero.
 	 * @return El resultado de la suma de los dos números enteros.
 	 */
-	
-
-	
-	public int resta(int a, int b) {
-		return a - b;
+	public int suma(int a, int b) {
+		return a + b;
 	}
 
 	/**
@@ -35,13 +33,13 @@ public class Calculadora {
 	 * @param b Es el segundo número entero.
 	 * @return El resultado de la resta de los dos números enteros.
 	 */
-
-
 	
-	
-	public int multiplica(int a, int b){
-		return a*b;
+	public int resta(int a, int b) {
+		return a - b;
 	}
+
+
+
 
 	/**
 	 * Devuelve el resultado de la multiplicación de dos números enteros.
@@ -50,11 +48,8 @@ public class Calculadora {
 	 * @param b Ee el segundo número entero.
 	 * @return El resultado de los dos números enteros.
 	 */
-	
-
-	
-	public int diveix(int a, int b) {
-		return a/b;
+	public int multiplica(int a, int b){
+		return a*b;
 	}
 
 	/**
@@ -65,6 +60,10 @@ public class Calculadora {
 	 * @throws ArithmeticException Si el segundo número es cero.
 	 * @return El resultado.
 	 */
+	
+	public int diveix(int a, int b) {
+		return a/b;
+	}
 
 }
 

@@ -63,6 +63,14 @@ public class Calculadora {
 		return a/b;
 	}
 
+	/**
+	 * En este método se calcula la potencia de los números pasados como parámetros
+	 *
+	 * @param a El número base de la potencia
+	 * @param n El exponente de la potencia
+	 * @return El total de la potencia
+	 */
+
 	public int oper1 ( int a , int n ){
 
 		int t = 1;
@@ -74,6 +82,12 @@ public class Calculadora {
 		return t;
 	}
 
+	/**
+	 * En este método se dice si el número entero es par o impar
+	 * 
+	 * @param a El número entero que es par o impar
+	 * @return True si el número es par o false si el número es impar
+	 */
 
 	public boolean oper2 ( int a ){
 
@@ -88,6 +102,12 @@ public class Calculadora {
 		return r;
 	}
 
+	/**
+	 * En este método se convierte el número entero en binario
+	 * 
+	 * @param a El número entero en decimal
+	 * @return La cadena con el número entero en binario
+	 */
 
 	public String oper3(int a){
 

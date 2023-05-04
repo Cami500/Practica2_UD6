@@ -59,5 +59,62 @@ public class Calculadora {
 		return a/b;
 	}
 
+	/**
+	 * Devuelve la potencia de dos números enteros.
+	 * @param num1 el primer número entero.
+	 * @param num2 el segundo numero entero.
+	 * @throws ArithmeticException si "num2" es negativo.
+	 * @return El resultado
+	 */
+
+	public int calcPotencia ( int num1 , int num2 ){
+
+		int x = 1;
+
+		for ( int i = 0; i < num2 ; i++ ){
+			x = x * num1;
+		}
+
+		return x;
+	}
+
+	/**
+	 * Comprueba se el número introducido és par.
+	 * @param num1 el número que queremos comprobar.
+	 * @return Devuelve true/false.
+	 */
+
+	public boolean esPar ( int num1 ){
+
+		boolean x;
+
+		if ( num1 % 2 == 0) {
+			x = true;
+		} else {
+			x = false;
+		}
+
+		return x;
+	}
+
+	/**
+	 * Devuelve el número binario de un número introducido previamente.
+	 * @param num1 el primer número entero.
+	 * @return El número binario en forma de cadena.
+	 */
+
+	public String calcBinario(int num1){
+
+		String cadena = "";
+		int x = num1;
+		int y;
+
+		while ( x > 0) {
+			y = x % 2;
+			cadena = y + cadena;
+			x = x / 2;
+		}
+		return cadena;
+	}
 }
 

@@ -71,7 +71,7 @@ public class Calculadora {
 	 * @return El total de la potencia
 	 */
 
-	public int oper1 ( int a , int n ){
+	public int potencia ( int a , int n ){
 
 		int t = 1;
 
@@ -89,7 +89,7 @@ public class Calculadora {
 	 * @return True si el número es par o false si el número es impar
 	 */
 
-	public boolean oper2 ( int a ){
+	public boolean parOImpar ( int a ){
 
 		boolean r;
 
@@ -109,7 +109,7 @@ public class Calculadora {
 	 * @return La cadena con el número entero en binario
 	 */
 
-	public String oper3(int a){
+	public String convertirABinario(int a){
 
 		String r = "";
 		int v = a;

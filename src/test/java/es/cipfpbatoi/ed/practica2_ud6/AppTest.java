@@ -7,8 +7,14 @@ import org.junit.Test;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-{
+public class AppTest {
+    /**
+     * Crea una instancia de AppTest.
+     */
+    public AppTest() {
+        // ...
+    }
+
     /**
      * Rigorous Test :-)
      */

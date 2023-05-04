@@ -12,9 +12,9 @@ public class Calculadora {
 
 	/**
 	 * suma dos parámetros para obtener la suma de ambos
-	 * @param a
-	 * @param b
-	 * @return
+	 * @param a parámetro 1 numero entero
+	 * @param b parámetro 2 numero entero
+	 * @return suma de ambos parámetros
 	 * @exception NumberFormatException
 	 *  Por uso de un alfanumérico
 	 */
@@ -24,9 +24,9 @@ public class Calculadora {
 
 	/**
 	 * resta de dos parámetros para obtener la resta de ambos
-	 * @param a
-	 * @param b
-	 * @return
+	 * @param a parámetro 1 numero entero
+	 * @param b parámetro 2 numero entero
+	 * @return resta de ambos parámetros
 	 * @exception NumberFormatException
 	 * Por uso de un alfanumérico
 	 */
@@ -36,9 +36,9 @@ public class Calculadora {
 
 	/**
 	 * multiplicar ambos parámetros para obtener el producto de ambos
-	 * @param a
-	 * @param b
-	 * @return
+	 * @param a parámetro 1 numero entero
+	 * @param b parámetro 2 numero entero
+	 * @return multiplicacion de ambos parámetros
 	 * @exception NumberFormatException
 	 * Por uso de un alfanumerico
 	 */
@@ -48,11 +48,11 @@ public class Calculadora {
 
 	/**
 	 * división de ambos parámetros para obtener la división de ambos
-	 * @param a
-	 * @param b
+	 * @param a parámetro 1 numero enteros
+	 * @param b parámetro 2 numero entero
+	 * @return division de ambos parámetros
 	 * @exception ArithmeticException
 	 * Por uso del número 0 como divisor
-	 * @return
 	 */
 	public int diveix(int a, int b){
 		return a/b;

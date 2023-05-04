@@ -10,6 +10,12 @@ package ed.tatiana;
  */
 public class Calculadora {
 
+	/**
+	 * Crea una instancia de Calculadora.
+	 */
+	public Calculadora() {
+		// ...
+	}
 
 	/** Realiza la operación de suma entre dos números enteros.
 	 * @param a el primer número entero
@@ -48,6 +54,7 @@ public class Calculadora {
 	public int diveix(int a, int b) {
 		return a/b;
 	}
+
 
 }
 

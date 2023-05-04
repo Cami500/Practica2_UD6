@@ -43,6 +43,14 @@ public class Calculadora {
 	 * @param b El segundo número entero.
 	 * @return El resultado de la resta de los dos números enteros.
 	 */
+
+	/**
+	 * Devuelve la resta de los dos números enteros que se le pasa al método.
+	 *
+	 * @param a Un número entero
+	 * @param b Otro número entero
+	 * @return El total de la resta de los números enteros que se han pasado como parámetro
+	 */
 	
 	public int resta(int a, int b) {
 		return a - b;

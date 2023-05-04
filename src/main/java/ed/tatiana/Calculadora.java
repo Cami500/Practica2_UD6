@@ -55,6 +55,11 @@ public class Calculadora {
 			return a / b;
 		}
 
+	/** Calcula la potencia de un número
+	 * @param a es la base de la potencia.
+	 * @param n el exponente.
+	 * @return el resultado de multiplicar a, n veces.
+	 */
 		public int obtenerPotencia(int a, int n ){
 
 			int t = 1;
@@ -66,7 +71,10 @@ public class Calculadora {
 			return t;
 		}
 
-
+	/** Determina si es o no es un número par.
+	 * @param a el número a verificar.
+	 * @return true si lo es o false si no lo es.
+	 */
 		public boolean esPar(int a ){
 
 			boolean r;
@@ -80,7 +88,10 @@ public class Calculadora {
 			return r;
 		}
 
-
+	/** Convierte un número entero en su representación a binario.
+	 * @param a el número entero que se va a convertir en binario.
+	 * @return una cadena de texto que representa el número entero en su forma binaria.
+	 */
 		public String convertirabinario(int a){
 
 			String r = "";

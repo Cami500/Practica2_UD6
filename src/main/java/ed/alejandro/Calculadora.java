@@ -15,7 +15,12 @@ package ed.alejandro;
 public class Calculadora {
 	
 	/**
-	 * Realiza la operación de suma entre dos números devolviendo su resultado
+	 * Constructor por defecto de la clase.
+	 */
+	public Calculadora() {}
+	
+	/**
+	 * Realiza la operación de suma entre dos números devolviendo su resultado.
 	 *
 	 * @param a es el primer sumando
 	 * @param b es el segundo sumando

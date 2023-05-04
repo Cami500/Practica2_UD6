@@ -62,7 +62,14 @@ public class Calculadora {
 	 * @param b El segundo número entero.
 	 * @return El resultado de los dos números enteros.
 	 */
-	
+
+	/**
+	 * Devuelve la multiplicación de los dos números enteros que se le pasa al método.
+	 *
+	 * @param a Un número entero
+	 * @param b Otro número entero
+	 * @return El total de la multiplicación de los números enteros pasados como parámetros
+	 */
 	
 	public int multiplica(int a, int b){
 		return a*b;

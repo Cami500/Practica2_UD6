@@ -6,9 +6,13 @@ package ed.marcos;
  * @since 2.1, junio de 2022
  * @author Marcos Sanz Gómez
  */
-
 public class Calculadora {
-	
+	/**
+	 * Este es un constructor por defecto
+	 */
+	public Calculadora() {
+	}
+
 	/**
 	 * Devuelve el total de sumar dos números.
 	 *
@@ -19,7 +23,6 @@ public class Calculadora {
 	public int suma(int a, int b) {
 		return a + b;
 	}
-	
 	/**
 	 * Devuelve la diferencia de restar dos números.
 	 *
@@ -30,7 +33,6 @@ public class Calculadora {
 	public int resta(int a, int b) {
 		return a - b;
 	}
-
 	/**
 	 * Devuelve el producto de multiplicar de dos números.
 	 *
@@ -41,7 +43,6 @@ public class Calculadora {
 	public int multiplica(int a, int b){
 		return a*b;
 	}
-	
 	/**
 	 * Devuelve el cociente de dividir dos números.
 	 *
@@ -53,6 +54,5 @@ public class Calculadora {
 	public int diveix(int a, int b) {
 		return a/b;
 	}
-
 }
 

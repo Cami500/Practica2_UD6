@@ -7,8 +7,12 @@ import org.junit.Test;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-{
+public class AppTest {
+    /**
+     * Este es un constructor por defecto
+     */
+    public AppTest() {
+    }
     /**
      * Rigorous Test :-)
      */

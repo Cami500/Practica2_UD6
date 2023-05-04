@@ -54,5 +54,66 @@ public class Calculadora {
 		return a/b;
 	}
 
+	/**
+	 * Este método calcula la potencia de un valor a elevado a uno n. Toma dos valores enteros a y n,
+	 * y devuelve el resultado de a elevado a n como un entero.
+	 *
+	 * @param a base de la potencia
+	 * @param n exponente de la potencia
+	 * @return número entero resultado de la potencia
+	 */
+	public int potencia(int a , int n ){
+
+		int t = 1;
+
+		for ( int i = 0; i < n ; i++ ){
+			t = t * a;
+		}
+
+		return t;
+	}
+
+	/**
+	 * Este método determina si un valor a es par o no.
+	 * Toma un valor a y devuelve un booleano true si a es par y false si a es impar.
+	 *
+	 * @param a valor a evaluar si es par o impar
+	 * @return booleano true si a es par false si a es impar
+	 */
+	public boolean esPar ( int a ){
+
+		boolean r;
+
+		if ( a % 2 == 0) {
+			r = true;
+		} else {
+			r = false;
+		}
+
+		return r;
+	}
+
+	/**
+	 * Este método convierte un valor a en su representación binaria en forma de String.
+	 * Toma un valor a y devuelve un String que representa la forma binaria de a.
+	 *
+	 * @param a valor a convertir en binario
+	 * @return cadena de caracteres con la forma binaria de a
+	 */
+	public String convertirBinario (int a){
+
+		String r = "";
+		int v = a;
+		int v1;
+
+		while ( v > 0) {
+			v1 = v % 2;
+			r = v1 + r;
+			v = v / 2;
+		}
+
+		return r;
+	}
+
 }
 

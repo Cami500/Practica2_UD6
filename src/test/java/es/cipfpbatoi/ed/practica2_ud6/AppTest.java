@@ -9,6 +9,10 @@ import org.junit.Test;
  */
 public class AppTest 
 {
+    /** constructor AppTest */
+    public AppTest() {
+    }
+
     /**
      * Rigorous Test :-)
      */

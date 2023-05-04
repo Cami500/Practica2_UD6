@@ -38,9 +38,6 @@ public class Calculadora {
 		return a - b;
 	}
 
-
-
-
 	/**
 	 * Devuelve el resultado de la multiplicación de dos números enteros.
 	 *
@@ -64,6 +61,63 @@ public class Calculadora {
 	public int diveix(int a, int b) {
 		return a/b;
 	}
+
+
+	/**
+	 *	Saca la potencia entre el parametro a y n
+	 * @param num1 Es el primer número entero
+	 * @param elevado Esl el segundo número entero o el elevado
+	 * @return saca la potencia
+	 */
+	public int potencia(int num1 , int elevado ){
+
+		int potencia = 1;
+
+		for ( int i = 0; i < elevado ; i++ ){
+			potencia = potencia * num1;
+		}
+
+		return potencia;
+	}
+
+	/**
+	 * Dice si es par o no
+	 * @param num1 Es el número entero
+	 * @return true o false si es par o no
+	 */
+	public boolean parOImpar(int num1 ){
+
+		boolean resultado;
+
+		if ( num1 % 2 == 0) {
+			resultado = true;
+		} else {
+			resultado = false;
+		}
+
+		return resultado;
+	}
+
+	/**
+	 * Hace el cálculo del parametro a al binario
+	 * @param num1 Es el número entero que queremos pasar a binario
+	 * @return el número en binario
+	 */
+
+	public String pasarBinario(int num1){
+
+		String r = "";
+		int v = num1;
+		int v1;
+
+		while ( v > 0) {
+			v1 = v % 2;
+			r = v1 + r;
+			v = v / 2;
+		}
+		return r;
+	}
+
 
 }
 

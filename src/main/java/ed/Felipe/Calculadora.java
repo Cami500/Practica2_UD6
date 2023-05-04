@@ -60,6 +60,14 @@ public class Calculadora {
 		return a/b;
 	}
 
+	/**
+	 * Devuelve la potencia de dos números enteros.
+	 * @param base El primer número entero.
+	 * @param exponente El segundo número entero.
+	 * @return El resultado.
+	 * @throws ArithmeticException Si exponente es un número negativo.
+	 */
+
 	public int potencia ( int base , int exponente ){
 
 		int resultado = 1;
@@ -71,6 +79,11 @@ public class Calculadora {
 		return resultado;
 	}
 
+	/**
+	 * Devuelve un booleano indicando si un número es par o impar.
+	 * @param n El número entero.
+	 * @return El resultado.
+	 */
 	public boolean esPar ( int n ){
 
 		boolean esPar;
@@ -84,6 +97,12 @@ public class Calculadora {
 		return esPar;
 	}
 
+	/**
+	 * Devuelve el resultado en binario de un número entero.
+	 * @param n El número entero
+	 * @return El resultado.
+	 * @throws El número n no puede ser negativo.
+	 */
 	public String binario (int n){
 
 		String resultado = "";
@@ -96,7 +115,5 @@ public class Calculadora {
 			dividendo = dividendo / 2;
 		}
 	}
-
-
 }
 

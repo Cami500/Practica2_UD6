@@ -1,59 +1,55 @@
 package ed.marcos;
 /**
- * Esta clase define una calculadora con cuatro métodos que realizan las operaciones básicas de suma, resta, multiplicación y división.
+ * Esta clase es una calculadora la cual puede hacer sumas, restas, multiplicaciones y divisiones pasándole los parámetros para que haga las operaciones.
  *
  * @version 3.7
- * @since 2.1
- * @author Karlos Andrés Chávez Abrego
+ * @since 2.1, junio de 2022
+ * @author Marcos Sanz Gómez
  */
 
 public class Calculadora {
 	
 	/**
-	 * Devuelve la suma de dos números enteros.
+	 * Devuelve el total de sumar dos números.
 	 *
-	 * @param a El primer número entero.
-	 * @param b El segundo número entero.
-	 * @return El resultado de la suma de los dos números enteros.
+	 * @param a El primer sumando.
+	 * @param b El segundo sumando.
+	 * @return El resultado de la suma de los dos sumandos.
 	 */
-	
 	public int suma(int a, int b) {
 		return a + b;
 	}
 	
 	/**
-	 * Devuelve la resta de dos números enteros.
+	 * Devuelve la diferencia de restar dos números.
 	 *
-	 * @param a El primer número entero.
-	 * @param b El segundo número entero.
-	 * @return El resultado de la resta de los dos números enteros.
+	 * @param a El minuendo.
+	 * @param b El sustraendo.
+	 * @return El resultado de la resta, la diferencia.
 	 */
-	
 	public int resta(int a, int b) {
 		return a - b;
 	}
+
 	/**
-	 * Devuelve el resultado de la multiplicación de dos números enteros.
+	 * Devuelve el producto de multiplicar de dos números.
 	 *
-	 * @param a El primer número entero.
-	 * @param b El segundo número entero.
-	 * @return El resultado de los dos números enteros.
+	 * @param a El multiplicando.
+	 * @param b El multiplicado.
+	 * @return El resultado de la multiplicación, el producto.
 	 */
-	
-	
 	public int multiplica(int a, int b){
 		return a*b;
 	}
 	
 	/**
-	 * Devuelve la división de dos números enteros.
+	 * Devuelve el cociente de dividir dos números.
 	 *
-	 * @param a El primer número entero.
-	 * @param b El segundo número entero (no puede ser cero).
-	 * @throws ArithmeticException Si el segundo número es cero.
-	 * @return El resultado.
+	 * @param a El dividendo.
+	 * @param b El divisor.
+	 * @throws ArithmeticException Cuando el divisor es cero.
+	 * @return El resultado de la división, el cociente.
        */
-	
 	public int diveix(int a, int b) {
 		return a/b;
 	}

@@ -34,9 +34,18 @@ public class Calculadora {
 			System.out.println("No se puede dividir entre 0");
 		}
 
+		// Método potencia
+		int resultadoPotencia = miCalculadora.potencia(2, 3);
+		System.out.println("2 elevado a la 3 = " + resultadoPotencia);
 
+		// Método parImpar
+		boolean esPar = miCalculadora.parImpar(4);
+		System.out.println("El número 4 es par? " + esPar);
+
+		// Método binario
+		String resultadoBinario = miCalculadora.binario(10);
+		System.out.println("El número 10 en binario es: " + resultadoBinario);
 	}
-
 
 	/**
 	 * Este metodo se encargara de hacer la suma de dos valores enteros
@@ -79,6 +88,57 @@ public class Calculadora {
 		return a/b;
 	}
 
+	/**
+	 * Este método llamado potencia toma dos valores enteros como entrada a y n, y devuelve el resultado de elevar a a la potencia n.
+	 * @param a Primer valor entero
+	 * @param n Segundo valor entero
+	 * @return Este método devuelve el resultado de elevar el primer argumento a la potencia del segundo argumento.
+	 */
+	public int potencia ( int a , int n ){
 
+		int t = 1;
+
+		for ( int i = 0; i < n ; i++ ){
+			t = t * a;
+		}
+
+		return t;
+	}
+
+	/**
+	 * Este método llamado parImpar toma un valor entero a como entrada y devuelve un valor booleano (true/false) en función de si el número es par o no.
+	 * @param a Valor entero
+	 * @return Este método devuelve true si el número es par y false si es impar.
+	 */
+	public boolean parImpar ( int a ){
+
+		boolean r;
+
+		if ( a % 2 == 0) {
+			r = true;
+		} else {
+			r = false;
+		}
+
+		return r;
+	}
+
+	/**
+	 * Este método de Java llamado binario que toma un valor entero a como entrada
+	 * @param a Valor entero
+	 * @return Retorna la cadena de caracteres r
+	 */
+	public String binario(int a){
+
+		String r = "";
+		int v = a;
+		int v1;
+
+		while ( v > 0) {
+			v1 = v % 2;
+			r = v1 + r;
+			v = v / 2;
+		}
+		return r;
+	}
 }
-

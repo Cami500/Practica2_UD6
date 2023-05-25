@@ -10,19 +10,8 @@ package ed.ivan;
  */
 public class Calculadora {
 
-	public static void main(String[] args) {
-		Calculadora calculadora = new Calculadora();
-		calculadora.suma(1,2);
-		calculadora.resta(2,4);
-		calculadora.multiplica(3,4);
-		calculadora.diveix(0,3);
-		calculadora.operacionBucle(3,7);
-		calculadora.esPar(5);
-		calculadora.conversorBinario(20);
-	}
-
 	/**
-	 * Suma de dos números enteros.
+	 * Este metodo suma dos números enteros y devuelve el resultado.
 	 *
 	 * @param a El primer número entero.
 	 * @param b El segundo número entero.
@@ -33,7 +22,7 @@ public class Calculadora {
 	}
 
 	/**
-	 * Resta de dos números enteros.
+	 * Este metodo resta dos números enteros y devuelve el resultado.
 	 *
 	 * @param a El primer número entero.
 	 * @param b El segundo número entero.
@@ -45,7 +34,7 @@ public class Calculadora {
 	}
 
 	/**
-	 * Multiplicacion entre dos números enteros.
+	 * Este metodo multiplica dos números enteros y devuelve el resultado.
 	 *
 	 * @param a El primer número entero.
 	 * @param b El segundo número entero.
@@ -57,7 +46,7 @@ public class Calculadora {
 	}
 
 	/**
-	 * División de dos números enteros.
+	 * Este metodo divide dos números enteros y devuelve el resultado. Si el segundo número es cero, lanza una excepción.
 	 *
 	 * @param a El primer número entero.
 	 * @param b El segundo número entero.
@@ -98,7 +87,7 @@ public class Calculadora {
 
 		boolean r;
 
-		if ( a % 2 == 0) {
+		if (a % 2 == 0) {
 			r = true;
 		} else {
 			r = false;

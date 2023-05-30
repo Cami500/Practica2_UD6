@@ -14,6 +14,11 @@ package ed.andreu;
  * @since 2.1, junio de 2022
  */
 public class Calculadora {
+	/**
+	 * Constructor de la clase calculadora
+	 * */
+	public Calculadora() {
+	}
 
 	/**
 	 * Hace la suma de los dos números pasados al metodo como parametro
